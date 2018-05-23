@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1527051435 source:c:\users\angel\documents\imoveis\sistema imobiliario\main.cpp
+	<iostream>
+	<vector>
+	"origem.h"
+
+1527051851 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\endereco.cpp
+	"Endereco.h"
+	<string>
+
+1527050462 c:\users\angel\documents\imoveis\sistema imobiliario\include\endereco.h
+	<string>
+
+1527045786 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\servico.cpp
+	"servico.h"
+	<string>
+
+1527045654 c:\users\angel\documents\imoveis\sistema imobiliario\include\servico.h
+	<string>
+
+1527047133 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\comercio.cpp
+	"comercio.h"
+	<string>
+
+1527051720 c:\users\angel\documents\imoveis\sistema imobiliario\include\comercio.h
+	<string>
+	"endereco.h"
+	"servico.h"
+
+1527047615 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\terreno.cpp
+	"terreno.h"
+
+1527047615 c:\users\angel\documents\imoveis\sistema imobiliario\include\terreno.h
+
+1527047723 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\casa.cpp
+	"casa.h"
+
+1527050462 c:\users\angel\documents\imoveis\sistema imobiliario\include\casa.h
+
+1527049363 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\flat.cpp
+	"flat.h"
+
+1527049343 c:\users\angel\documents\imoveis\sistema imobiliario\include\flat.h
+
+1527049792 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\apartamento.cpp
+	"apartamento.h"
+	<string>
+
+1527049785 c:\users\angel\documents\imoveis\sistema imobiliario\include\apartamento.h
+	<string>
+
+1527050838 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\origem.cpp
+	"origem.h"
+
+1527051781 c:\users\angel\documents\imoveis\sistema imobiliario\include\origem.h
+	"comercio.h"
+	"casa.h"
+	"terreno.h"
+	"apartamento.h"
+	"flat.h"
+	"studio.h"
+
+1527051397 c:\users\angel\documents\imoveis\sistema imobiliario\include\studio.h
+	<string>
+
+1527051037 source:c:\users\angel\documents\imoveis\sistema imobiliario\src\studio.cpp
+	"studio.h"
+	<string>
+
