@@ -13,24 +13,24 @@ public:
 	comercio();
 	virtual ~comercio();
 
-	double getO_precov(int x);
-	double getO_precoa(int x);
-	std::string getO_aluga(int x);
-	std::string getO_venda(int x);
+	double getO_precov(int x, int y);
+	double getO_precoa(int x, int y);
+	std::string getO_aluga(int x, int y);
+	std::string getO_venda(int x, int y);
 	int getO_Total(int x);
 
-	void setO_precov(double N, int x);
-	void setO_precoa(double N, int x);
-	void setO_aluga(std::string str, int x);
-	void setO_venda(std::string str, int x);
-	void getO_Total(int N,int x);
+	void setO_precov(double N, int x, int y);
+	void setO_precoa(double N, int x, int y);
+	void setO_aluga(std::string str, int x, int y);
+	void setO_venda(std::string str, int x, int y);
+	void setO_Total(int N,int x);
 protected:
 
 private:
-	double O_precov[100];
-	double O_precoa[100];
-	std::string O_aluga[100];
-	std::string O_venda[100];
+	double O_precov[100][5];
+	double O_precoa[100][5];
+	std::string O_aluga[100][5];
+	std::string O_venda[100][5];
 	int total[5];
 };
 

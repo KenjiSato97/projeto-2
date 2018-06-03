@@ -22,13 +22,14 @@ int main()
 		printf("  **      3 SAIR          **\n");
 		printf("  **************************\n");
 		printf("\nQual opcao voce deseja acessar?\n ");
+
 		cin >> op;
 		cin.ignore();
 
 		switch (op) {
 		case 1:c.getMenuCadastro();
 			break;
-		case 2:
+		case 2:c.getMenuConsulta();
 			break;
 		}
 	}

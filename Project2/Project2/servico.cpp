@@ -11,53 +11,53 @@ servico::~servico()
 {
 	
 }
-std::string servico::getO_ar(int x)
+std::string servico::getO_ar(int x, int y)
 {
-	return O_ar[x];
+	return O_ar[x][y];
 }
-std::string servico::getO_net(int x)
+std::string servico::getO_net(int x, int y)
 {
-	return O_net[x];
+	return O_net[x][y];
 }
-std::string servico::getO_tv(int x)
+std::string servico::getO_tv(int x, int y)
 {
-	return O_tv[x];
+	return O_tv[x][y];
 }
-std::string servico::getO_lavanderia(int x)
+std::string servico::getO_lavanderia(int x, int y)
 {
-	return O_lavanderia[x];
+	return O_lavanderia[x][y];
 }
-std::string servico::getO_limpeza(int x)
+std::string servico::getO_limpeza(int x, int y)
 {
-	return O_limpeza[x];
+	return O_limpeza[x][y];
 }
-std::string servico::getO_recep(int x)
+std::string servico::getO_recep(int x, int y)
 {
-	return O_recep[x];
+	return O_recep[x][y];
 }
 
 
-void servico::setO_ar(std::string str, int x)
+void servico::setO_ar(std::string str, int x, int y)
 {
-	O_ar[x] = str;
+	O_ar[x][y] = str;
 }
-void servico::setO_net(std::string str, int x)
+void servico::setO_net(std::string str, int x, int y)
 {
-	O_net[x] = str;
+	O_net[x][y] = str;
 }
-void servico::setO_tv(std::string str, int x)
+void servico::setO_tv(std::string str, int x, int y)
 {
-	O_tv[x] = str;
+	O_tv[x][y] = str;
 }
-void servico::setO_lavanderia(std::string str, int x)
+void servico::setO_lavanderia(std::string str, int x, int y)
 {
-	O_lavanderia[x] = str;
+	O_lavanderia[x][y] = str;
 }
-void servico::setO_limpeza(std::string str, int x)
+void servico::setO_limpeza(std::string str, int x, int y)
 {
-	O_limpeza[x] = str;
+	O_limpeza[x][y] = str;
 }
-void servico::setO_recep(std::string str, int x)
+void servico::setO_recep(std::string str, int x, int y)
 {
-	O_recep[x] = str;
+	O_recep[x][y] = str;
 }

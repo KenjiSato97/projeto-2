@@ -14,44 +14,43 @@ comercio::~comercio()
 {
 	//dtor
 }
-double comercio::getO_precov(int x)
+double comercio::getO_precov(int x, int y)
 {
-	return O_precov[x];
+	return O_precov[x][y];
 }
-double comercio::getO_precoa(int x)
+double comercio::getO_precoa(int x, int y)
 {
-	return O_precoa[x];
+	return O_precoa[x][y];
 }
-std::string comercio::getO_aluga(int x)
+std::string comercio::getO_aluga(int x, int y)
 {
-	return O_aluga[x];
+	return O_aluga[x][y];
 }
-std::string comercio::getO_venda(int x)
+std::string comercio::getO_venda(int x, int y)
 {
-	return O_venda[x];
+	return O_venda[x][y];
 }
 int comercio::getO_Total(int x)
 {
 	return total[x];
 }
-void comercio::setO_precoa(double N, int x)
+void comercio::setO_precoa(double N, int x, int y)
 {
-	O_precoa[x] = N;
+	O_precoa[x][y] = N;
 }
-void comercio::setO_precov(double N, int x)
+void comercio::setO_precov(double N, int x, int y)
 {
-	O_precov[x] = N;
+	O_precov[x][y] = N;
 }
-void comercio::setO_aluga(std::string str, int x)
+void comercio::setO_aluga(std::string str, int x, int y)
 {
-	O_aluga[x] = str;
+	O_aluga[x][y] = str;
 }
-void comercio::setO_venda(std::string str, int x)
+void comercio::setO_venda(std::string str, int x, int y)
 {
-	O_venda[x] = str;
+	O_venda[x][y] = str;
 }
-
-void comercio::getO_Total(int N, int x)
+void comercio::setO_Total(int N, int x)
 {
 	total[x] += N;
 }

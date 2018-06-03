@@ -21,6 +21,7 @@ using namespace std;
 
 void cadastro::setCadastra(int N)
 {
+	system("cls");
 	string No, Str;
 	double Nu;
 	int e, i;
@@ -32,66 +33,67 @@ void cadastro::setCadastra(int N)
 
 	for (i = getO_Total(N-1); i < e; i++)
 	{
+		system("cls");
 		if (N == 1 || N == 2 || N == 3 || N == 4 || N == 5)
 		{
 			cout << "digite o codigo do imovel" << endl;
 			cin >> Nu;
 			cin.ignore();
-			setO_codigo(Nu,i);
+			setO_codigo(Nu,i, N);
 
 			cout << "digite o logradouro" << endl;
 			getline(cin, No);
-			setO_logradouro(No, i);
+			setO_logradouro(No, i, N);
 
 			cout << "digite o numero " << endl;
 			cin >> Nu;
 			cin.ignore();
-			setO_numero(Nu, i);
+			setO_numero(Nu, i, N);
 
 			cout << "digite o bairro" << endl;
 			getline(cin, No);
-			setO_bairro(No, i);
+			setO_bairro(No, i, N);
 
 			cout << "digite a cidade" << endl;
 			getline(cin, No);
-			setO_cidade(No, i);
+			setO_cidade(No, i, N);
 
 			cout << "digite o CEP" << endl;
 			getline(cin, No);
-			setO_cep(No, i);
+			setO_cep(No, i, N);
 
 			cout << "Eh para alugar? s/n" << endl;
 			getline(cin, No);
-			setO_aluga(No, i);
+			setO_aluga(No, i, N);
 			if (No == "s" || No == "S") 
 				{
 
 					cout << "digite o preço do aluguel " << endl;
 					cin >> Nu;
 					cin.ignore();
-					setO_precoa(Nu, i);
+					setO_precoa(Nu, i, N);
 
 				}else
 				{
-					setO_precoa(0, i);
+					setO_precoa(0, i, N);
 				}
 			
 
 			cout << "Eh para vender? s/n" << endl;
 			getline(cin, No);
-			setO_venda(No, i);
+			setO_venda(No, i, N);
 				if (No == "s" || No == "S")
 				{
 
 					cout << "digite o preço de venda " << endl;
 					cin >> Nu;
 					cin.ignore();
-					setO_precov(Nu, i);
+					setO_precov(Nu, i, N);
 
 				}
 				else
 				{
-					setO_precov(0, i);
+					setO_precov(0, i, N);
 				}
 			
 		}
@@ -99,27 +101,27 @@ void cadastro::setCadastra(int N)
 		{
 			cout << "Possui ar condicionado? s/n" << endl;
 			getline(cin, No);
-			setO_ar(No, i);
+			setO_ar(No, i, N);
 
 			cout << "Possui internet? s/n" << endl;
 			getline(cin, No);
-			setO_net(No, i);
+			setO_net(No, i, N);
 
 			cout << "Possui tv a cabo? s/n" << endl;
 			getline(cin, No);
-			setO_tv(No, i);
+			setO_tv(No, i, N);
 
 			cout << "Possui lavanderia? s/n" << endl;
 			getline(cin, No);
-			setO_lavanderia(No, i);
+			setO_lavanderia(No, i, N);
 
 			cout << "Possui serviço de limpeza? s/n" << endl;
 			getline(cin, No);
-			setO_limpeza(No, i);
+			setO_limpeza(No, i, N);
 
 			cout << "Possui recepção 24hrs? s/n" << endl;
 			getline(cin, No);
-			setO_recep(No, i);
+			setO_recep(No, i, N);
 
 
 		}
@@ -227,8 +229,133 @@ void cadastro::setCadastra(int N)
 			getline(cin, No);
 			setO_ginasticas(No, i);
 		}
+		setO_Total(e,N -1);
 	}
 
-	cout << "deseja salvar?(s/n)" << endl;
+	
 
+}
+
+void cadastro::getImoveis()
+{
+	system("cls");
+		
+	cout << "Casas disponiveis: " << getO_Total(0) << endl;
+	cout << "Apartamentos disponiveis : " << getO_Total(1) << endl;
+	cout << "Terrenos disponiveis: " << getO_Total(2) << endl;
+	cout << "Flats disponiveis: " << getO_Total(3) << endl;
+	cout << "Studios disponiveis: " << getO_Total(4) << endl;
+	system("pause");
+}
+
+void cadastro::getPrintImoveis(int N, int i)
+{
+	cout << "-------------------------------------------------------------" << endl;
+		if (N == 1 || N == 2 || N == 3 || N == 4 || N == 5)
+		{
+			cout << " codigo do imovel:" << getO_codigo(i, N) << endl;
+
+
+			cout << " logradouro:" << getO_logradouro(i, N) << endl;
+	
+
+			cout << " numero:" << getO_numero(i, N) << endl;
+			
+	
+			cout << " bairro:" << getO_bairro(i, N) << endl;
+			
+
+			cout << " cidade:" << getO_cidade(i, N) << endl;
+			
+
+			cout << " CEP:" << getO_cep(i, N) << endl;
+			
+
+			cout << " alugar:" << getO_aluga(i, N) << endl;
+			
+			
+			if (getO_aluga(i, N) == "s" || getO_aluga(i, N) == "S")
+			{
+				cout << " preço do aluguel :" << getO_precoa(i, N) << endl;
+			}
+			
+			cout << " vender:" << getO_venda(i, N) << endl;
+			
+			if (getO_venda(i, N) == "s" || getO_venda(i, N) == "S")
+			{
+				cout << " digite o preço de venda " << getO_precov(i, N) << endl;
+			}
+			
+		}
+		if (N == 4 || N == 5)
+		{
+			cout << " ar condicionado:" << getO_ar(i, N) << endl;
+
+			cout << " internet:" << getO_net(i, N) <<endl;
+
+			cout << " tv a cabo:" << getO_tv(i, N) << endl;
+			
+			cout << " lavanderia:" << getO_lavanderia(i, N) << endl;
+			
+			cout << " serviço de limpeza:" << getO_limpeza(i, N) << endl;
+
+			cout << " recepção 24hrs:" << getO_recep(i, N) << endl;
+	
+		}
+
+		if (N == 1)
+		{
+			cout << "pavimentos" << getO_numePavimentosc(i) << endl;
+
+			cout << "quartos " << getO_numQuartosc(i) << endl;
+
+			cout << "terreno " << getO_areaTerrenoc(i) << endl;
+
+			cout << "area construida " << getO_areaConstruidac(i) << endl;
+
+		}
+		if (N == 2)
+		{
+			cout << " posição" << getO_posicaoa(i) << endl;
+
+			cout << " numero de quartos " << getO_numQuartosa(i) << endl;
+	
+			cout << " andar " << getO_andara(i) << endl;
+	
+			cout << " valor do condominio " << getO_valorCondominioa(i) << endl;
+
+			cout << " quantidade de vagas na garagem " << getO_vagasGaragema(i) << endl;
+
+			cout << " area " << getO_areaa(i) << endl;;
+			
+
+		}
+		if (N == 3)
+		{
+			cout << " area " << getO_areat(i) << endl;;
+	
+		}
+		if (N == 4)
+		{
+			cout << " area " << getO_areaf(i) << endl;;
+
+			cout << " valor do condominio " << getO_valorCondominiof(i) << endl;;
+	
+		}
+		if (N == 5)
+		{
+			cout << " area " << getO_areas(i) << endl;
+
+			cout << " valor do condominio " << getO_valorCondominios(i) << endl;
+
+			cout << " andar " << getO_andars(i) << endl;
+
+			cout << " piscina? s/n" << getO_piscinas(i) << endl;
+
+			cout << " sauna? s/n" << getO_saunas(i) << endl;
+
+			cout << " sala de gisnatica? s/n" << getO_ginasticas(i) << endl;
+
+		}
+		cout << "-------------------------------------------------------------" << endl;
 }
