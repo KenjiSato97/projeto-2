@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1528055200 source:c:\users\angel\source\repos\project2\project2\apartamento.cpp
+	"apartamento.h"
+	<string>
+
+1528055200 c:\users\angel\source\repos\project2\project2\apartamento.h
+	<string>
+
+1528055200 source:c:\users\angel\source\repos\project2\project2\casa.cpp
+	"casa.h"
+
+1528055200 c:\users\angel\source\repos\project2\project2\casa.h
+
+1528068304 source:c:\users\angel\source\repos\project2\project2\comercio.cpp
+	"comercio.h"
+	<string>
+
+1528068303 c:\users\angel\source\repos\project2\project2\comercio.h
+	<string>
+	"endereco.h"
+	"casa.h"
+	"apartamento.h"
+	"terreno.h"
+	"servico.h"
+
+1528068150 c:\users\angel\source\repos\project2\project2\endereco.h
+	<string>
+
+1528055200 c:\users\angel\source\repos\project2\project2\terreno.h
+
+1528068043 c:\users\angel\source\repos\project2\project2\servico.h
+	<string>
+	"flat.h"
+	"studio.h"
+
+1528055200 c:\users\angel\source\repos\project2\project2\flat.h
+
+1528055200 c:\users\angel\source\repos\project2\project2\studio.h
+	<string>
+
+1528076478 source:c:\users\angel\source\repos\project2\project2\cadastro.cpp
+	"cadastro.h"
+	<iostream>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+
+1528066581 c:\users\angel\source\repos\project2\project2\cadastro.h
+	"comercio.h"
+
+1528068150 source:c:\users\angel\source\repos\project2\project2\endereco.cpp
+	"Endereco.h"
+	<string>
+
+1528055200 source:c:\users\angel\source\repos\project2\project2\flat.cpp
+	"flat.h"
+
+1528068688 source:c:\users\angel\source\repos\project2\project2\main.cpp
+	"Menu.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1528069797 c:\users\angel\source\repos\project2\project2\menu.h
+	"cadastro.h"
+
+1528068043 source:c:\users\angel\source\repos\project2\project2\servico.cpp
+	"servico.h"
+	<string>
+
+1528057147 source:c:\users\angel\source\repos\project2\project2\studio.cpp
+	"studio.h"
+	<string>
+
+1528055200 source:c:\users\angel\source\repos\project2\project2\terreno.cpp
+	"terreno.h"
+
+1528076490 source:c:\users\angel\source\repos\project2\project2\menu.cpp
+	"Menu.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
